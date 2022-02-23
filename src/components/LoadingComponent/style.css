@@ -1,0 +1,28 @@
+@keyframes loading_coin_breath {
+    form {
+        transform: scale(1); }
+    50% {
+        transform: scale(1.1); }
+    to {
+        transform: scale(1); } 
+}
+
+.loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(51, 51, 51, 0.9);
+    z-index: 10000;
+}
+    
+.loading-container img {
+    display: inline-block;
+    width: 512px;
+    height: auto;
+    animation: loading_coin_breath 2s infinite linear; 
+}
